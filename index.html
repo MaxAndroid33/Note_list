@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note</title>
-
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -15,23 +15,41 @@
 <body h-full w-full>
 
     <div class="bodyNote">
-        <div class="todolist">
-            <h1>To-Do List</h1>
-        </div>
+        <h1>To-Do List</h1>
         <div class="inputNote">
-            <form action="app.js">
-                <div class="inputbox">
-                    <input type="text" class="text" name="textnotes" placeholder="Add an item!"  >
-                    <input type="button" value="Submit" class="submintbtn" name="submint">
-                    <input type="button" value="Clear List" class="clearbtn" name="clear" onclick="">
-                </div>
+            <form id="new-note-form">
+
+                <input type="text" placeholder="Add an item!" id="textId" required>
+                <input type="submit" value="Submit" id="new-note-submit" class="btn"  />
+                <input type="button" value="Clear List" id="clear-all-notes" class="btn" />
+
             </form>
         </div>
 
     </div>
-    <div class="listItem">
-        <script src="js/app.js"> </script>
-    </div>
+    <main>
+        <section class="note-list">
+            <h1>All Notes </h1>
+            <div id="notes">
+                <!-- <div class="note">
+                    <div class="content">
+                        <input type="text" class="text" value="my note hear" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="edit">Edit</button>
+                    </div>
+
+                </div> -->
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/app.js"></script>
+
+
+    </script>
 </body>
 
 </html>
